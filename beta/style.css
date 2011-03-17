@@ -1,0 +1,91 @@
+body {
+	font-size: 14px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 270px;
+	background: url(http://f.cl.ly/items/1z0o0B2r120M2a322s2O/leather.jpg) top left repeat-x;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.inner {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#iphone {
+	position: absolute;
+	left: 35px;
+	width: 265px;
+	height: 575px;
+	background: url(http://f.cl.ly/items/1e3U330Z1t0A1x3U1D07/iphone.png) top left no-repeat;
+}
+
+#screen {
+	position: relative;
+	top: 93px;
+	left: 22px;
+	width: 224px;
+	height: 335px;
+	background: black;
+}
+
+.inner_right {
+	width: 490px;
+	position: absolute;
+	left: 330px;
+}
+
+#logo {
+	width: 400px;
+	height: 86px;
+	margin: 0 auto;
+	margin-top: 8px; /* fine tune this to make the logo lined up with the iphone */
+	/* note the value does affect the inner_right div, and not directly this one */
+	background: url(http://f.cl.ly/items/0618330d0g3i1d0h1I0q/logo.png) top left no-repeat;
+	
+}
+#screenshots {
+	
+	background-position: left;
+	
+	margin-top: 40px;
+	
+}
+
+#lower_grad {
+	background: url(http://i.imgur.com/N0PJ4.png) top left repeat-x;
+	min-height: 100px;
+}
+
+#bullets {
+	padding-top: 20px;
+}
+
+.bullet {
+	width: 210px; /* 240 - icon width */
+	padding-left: 30px; /* icon width */
+	color: #3F3F3F;
+}
+.bullet_title {
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+}
+.bullet_seperator {
+	clear: both;
+	height: 40px;
+}
+img.thumbnail {
+	margin-right: 15px;
+	margin-left: 15px;
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+}

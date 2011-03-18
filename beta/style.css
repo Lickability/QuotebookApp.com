@@ -57,7 +57,7 @@ header {
 	margin-left: 15px;
 	background-position: left;
 	margin-top: 15px;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 	
 }
 
@@ -67,6 +67,7 @@ header {
 }
 
 #bullets {
+	padding-top: 20px;
 }
 
 .bullet {

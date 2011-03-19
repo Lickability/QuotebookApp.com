@@ -1,0 +1,135 @@
+/* @group Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @end */
+
+
+html{
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 14px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+	color: #fcfcfc;
+	text-shadow: #333 1px 1px 1px;
+	font: 70px "adobe-garamond-pro-1","adobe-garamond-pro-2";
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #fcfcfc;
+	text-shadow: #333 .3px .3px .3px;
+	font: 22px "adobe-garamond-pro-1","adobe-garamond-pro-2";
+	text-align: center;
+	margin-top: -22px;
+	margin-bottom: 0;
+	margin-right: 0px;
+	margin-left: 80px;
+}
+
+header {
+	height: 270px;
+	background: url(http://f.cl.ly/items/1z0o0B2r120M2a322s2O/leather.jpg) repeat-x;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.container {
+	width: 960px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#iphone {
+	position: absolute;
+	left: 35px;
+	width: 265px;
+	height: 575px;
+	background: url(http://f.cl.ly/items/1e3U330Z1t0A1x3U1D07/iphone.png) top left no-repeat;
+}
+
+#screen {
+	position: relative;
+	top: 93px;
+	left: 22px;
+	width: 224px;
+	height: 335px;
+	background: black;
+}
+
+
+.lowergradient{
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, rgb(160,160,160)),
+    color-stop(0, rgb(255,255,255)),
+    color-stop(1, rgb(255,255,255))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(160,160,160) 100%,
+    rgb(255,255,255) 0%,
+    rgb(255,255,255) 100%
+);
+	height: 87px;
+}

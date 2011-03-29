@@ -38,7 +38,11 @@ header {
 
 footer {
 	clear: both;
-	padding-top: 30px;
+	padding-top: 50px;
+    line-height: 8px;
+}
+.navlink {
+    color: #3f3f3f;
 }
 
 #screen {

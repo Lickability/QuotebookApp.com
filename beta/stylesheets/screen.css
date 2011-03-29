@@ -145,6 +145,11 @@ h3{
 	background: url(../images/iphone.png) top left no-repeat;
 }
 
+#screencast {
+    margin-top: 92px;
+    margin-left: 22px;
+}
+
 img.appstore{
 	margin-top: 10px;
 }

@@ -78,10 +78,15 @@ p.description {
 }
 
 p.elevatorpitch {
-	color: #e5e5e5;
+	color: #cbcbcb;
 	font: 600 22px/28px "adobe-garamond-pro-1","adobe-garamond-pro-2";
 	text-align: center;
-	margin: 10px 40px 20px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.appstore{
+	text-align: center;
 }
 
 footer{
@@ -136,7 +141,7 @@ h3{
 }
 
 img.appstore{
-	margin: 10px;
+	margin: 20px;
 }
 
 /* @group Features */

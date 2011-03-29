@@ -13,7 +13,7 @@ body {
 }
 
 header {
-	height: 300px;
+	height: 340px;
 	background: url(../images/leather.jpg) repeat;
 }
 
@@ -77,6 +77,13 @@ p.description {
 	color: #3F3F3F;
 }
 
+p.elevatorpitch {
+	color: white;
+	font: italic 20px/20px "adobe-garamond-pro-1","adobe-garamond-pro-2";
+	text-align: center;
+	margin: 10px 40px;
+}
+
 footer{
 	text-align: center;
 	color: #bfbfbf;
@@ -129,7 +136,7 @@ h3{
 }
 
 img.appstore{
-	margin-top: 40px;
+	margin-top: 25px;
 }
 
 /* @group Features */

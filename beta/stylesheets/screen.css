@@ -57,7 +57,7 @@ background: -moz-linear-gradient(top, #A0A0A0 0%, #FFFFFF 100%); /* firefox */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A0A0A0), color-stop(100%,#FFFFFF)); /* webkit */
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A0A0A0', endColorstr='#FFFFFF',GradientType=0 ); /* ie */
-	max-height: 50px;
+	/*max-height: 50px;*/
 }
 
 section.features {

@@ -52,11 +52,11 @@ footer {
 
 .lowergradient{
 background: #A0A0A0; /* old browsers */
-background: -moz-linear-gradient(top, #A0A0A0 0%, #FFFFFF 100%); /* firefox */
+background: -moz-linear-gradient(top, #A0A0A0 0%, #FFFFFF 10%); /* firefox */
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A0A0A0), color-stop(100%,#FFFFFF)); /* webkit */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A0A0A0), color-stop(10%,#FFFFFF)); /* webkit */
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A0A0A0', endColorstr='#FFFFFF',GradientType=0 ); /* ie */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DADADA', endColorstr='#FFFFFF',GradientType=0 ); /* ie */
 	/*max-height: 50px;*/
 }
 

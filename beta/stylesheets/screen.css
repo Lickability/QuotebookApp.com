@@ -40,6 +40,10 @@ footer {
 	padding-top: 30px;
 }
 
+.footer {
+	clear: both;
+}
+
 #screen {
 	position: relative;
 	top: 93px;

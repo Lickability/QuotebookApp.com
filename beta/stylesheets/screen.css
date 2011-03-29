@@ -13,9 +13,24 @@ body {
 }
 
 header {
-	height: 270px;
-	background: #000 url(http://f.cl.ly/items/1z0o0B2r120M2a322s2O/leather.jpg) repeat-x;
+	height: 300px;
+	background: url(../images/leather.jpg) repeat;
+}
+
+.insideheader
+{
 	padding-top: 30px;
+	height: 100%;
+	background: -moz-linear-gradient(top, rgba(203,203,203,0.5) 0%, rgba(0,0,0,0.5) 100%); /* firefox */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(203,203,203,0.5)), color-stop(100%,rgba(0,0,0,0.5))); /* webkit */
+
+	/* approximately a 33% opacity on blue */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000
+	);
+
+	/* IE8 uses -ms-filter for whatever reason... */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000);
 }
 
 footer {
@@ -72,7 +87,7 @@ h1, h1 a {
 	display: block;
 	color: white;
 	text-shadow: #333 1px 1px 1px;
-	font: 600 70px/50px "adobe-garamond-pro-1","adobe-garamond-pro-2";
+	font: 600 65px/50px "adobe-garamond-pro-1","adobe-garamond-pro-2";
 	margin-left: 10px;
 	margin-top: 10px;
 }

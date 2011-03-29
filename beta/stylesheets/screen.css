@@ -36,6 +36,7 @@ header {
 }
 
 footer {
+	clear: both;
 	padding-top: 30px;
 }
 
@@ -144,7 +145,7 @@ h3{
 }
 
 img.appstore{
-	margin: 10px;
+	margin-top: 10px;
 }
 
 /* @group Features */

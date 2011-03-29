@@ -35,13 +35,18 @@ header {
 	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000);
 }
 
+
 footer {
 	clear: both;
 	padding-top: 30px;
 }
+.footer-spacer{
+	height: 36px;
+}
 
 .footer {
 	clear: both;
+	height: 36px;
 }
 
 #screen {
@@ -195,6 +200,12 @@ img.appstore{
 
 
 /* @end */
+
+
+
+/* @end */
+
+/* @group For Twig */
 
 
 

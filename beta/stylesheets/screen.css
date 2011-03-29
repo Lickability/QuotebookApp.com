@@ -21,6 +21,7 @@ header {
 
 .insideheader
 {
+	background-color: black;
 	padding-top: 10px;
 	height: 100%;
 	background: -moz-linear-gradient(top, rgba(203,203,203,0.5) 0%, rgba(0,0,0,0.5) 100%); /* firefox */

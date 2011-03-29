@@ -150,6 +150,36 @@ h3{
     margin-left: 22px;
 }
 
+#featurebars {
+    margin-top: 130px;
+    margin-left: 25px;
+}
+
+.featurebardescription {
+    color: #ffffff;
+	font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 50px;
+    padding-top: 11px;
+}
+
+#retinabar {
+    background-image: url(../images/retinabar.png);
+	background-repeat: no-repeat;
+    height:37px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#ios4bar {
+    background-image: url(../images/ios4bar.png);
+	background-repeat: no-repeat;
+    height:37px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 img.appstore{
 	margin-top: 10px;
 }

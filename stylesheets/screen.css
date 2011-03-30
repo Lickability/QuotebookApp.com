@@ -48,6 +48,7 @@ footer {
 
 footer a {
     color: black;
+    font-weight: bold;
 	/*border-bottom: 1px solid #3f3f3f;*/
 }
 

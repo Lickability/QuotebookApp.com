@@ -39,7 +39,11 @@ header {
 footer {
 	clear: both;
 	padding-top: 50px;
-    line-height: 8px;
+	padding-bottom: 10px;
+	font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+	color: #3f3f3f;
 }
 
 footer a {
@@ -98,13 +102,6 @@ p.elevatorpitch {
 
 .appstore{
 	text-align: center;
-}
-
-footer{
-	
-	text-align: center;
-	color: #3f3f3f;
-	font-size: 14px;
 }
 
 /* @end */
@@ -235,12 +232,6 @@ img.appstore{
 
 
 /* @end */
-
-
-
-/* @end */
-
-/* @group For Twig */
 
 
 

@@ -41,8 +41,10 @@ footer {
 	padding-top: 50px;
     line-height: 8px;
 }
-.navlink {
-    color: #3f3f3f;
+
+footer a {
+    color: black;
+	/*border-bottom: 1px solid #3f3f3f;*/
 }
 
 #screen {
@@ -99,8 +101,10 @@ p.elevatorpitch {
 }
 
 footer{
+	
 	text-align: center;
 	color: #3f3f3f;
+	font-size: 14px;
 }
 
 /* @end */

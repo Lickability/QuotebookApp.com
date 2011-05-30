@@ -142,6 +142,11 @@ nav {
 	color: #878787;
 }
 
+.centered{
+	width: 50%; margin: 0 auto;
+	text-align: center;
+}
+
 a.nav-button{
 	display: block;
 	color: #525252;

@@ -177,7 +177,8 @@ a.nav-button:hover
 
 a.nav-button.selected {
 		background: url(../images/button-selected.png);
-	color: white;
+	color: #fffeff;
+	text-shadow: 0 1px 1px gray;
 
 }
 

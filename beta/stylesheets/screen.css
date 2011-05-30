@@ -143,7 +143,8 @@ nav {
 }
 
 .centered{
-	width: 50%; margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -157,7 +158,7 @@ a.nav-button{
 	font-size: 0.9em;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	float: left;
+	float: right;
 	line-height: 28px;
 	text-align: center;
 	text-decoration: none;

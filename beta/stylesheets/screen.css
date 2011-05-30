@@ -2,16 +2,16 @@
 
 /* @group Layout */
 
-html{
+html {
 	-webkit-font-smoothing: antialiased;
 	font-family: Helvetica, "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
 body {
 	font-size: 13px;
-    padding: 0px;
-    margin: 0px;
-    min-width: 980px;
+	padding: 0px;
+	margin: 0px;
+	min-width: 980px;
 }
 
 header {
@@ -19,20 +19,26 @@ header {
 	background: url(../images/leather.jpg) repeat;
 }
 
-.insideheader
-{
+.insideheader {
 	background-color: black;
 	padding-top: 10px;
 	height: 100%;
-	background: -moz-linear-gradient(top, rgba(203,203,203,0.5) 0%, rgba(0,0,0,0.5) 100%); /* firefox */
+	background: -moz-linear-gradient(top, rgba(203,203,203,0.5) 0%, rgba(0,0,0,0.5) 100%);
 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(203,203,203,0.5)), color-stop(100%,rgba(0,0,0,0.5))); /* webkit */
 
-	/* approximately a 33% opacity on blue */
+/* firefox */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(203,203,203,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
+
+/* webkit */
+
+
+/* approximately a 33% opacity on blue */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000
 	);
 
-	/* IE8 uses -ms-filter for whatever reason... */
+
+/* IE8 uses -ms-filter for whatever reason... */
 	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000);
 }
 
@@ -41,15 +47,17 @@ footer {
 	padding-top: 50px;
 	padding-bottom: 10px;
 	font-size: 14px;
-    line-height: 18px;
-    text-align: center;
+	line-height: 18px;
+	text-align: center;
 	color: #3f3f3f;
 }
 
 footer a {
-    color: black;
-    font-weight: bold;
-	/*border-bottom: 1px solid #3f3f3f;*/
+	color: black;
+	font-weight: bold;
+/*borde
+
+r-bottom: 1px solid #3f3f3f;*/
 }
 
 #screen {
@@ -61,33 +69,47 @@ footer a {
 	background: black;
 }
 
+.lowergradient {
+	background: #A0A0A0
 
-.lowergradient{
-background: #A0A0A0; /* old browsers */
-background: -moz-linear-gradient(top, #A0A0A0 0%, #FFFFFF 10%); /* firefox */
+;
+	/* old browsers */
+background: -moz-linear-gradient(top, #A0A0A0 0%, #FFFFFF 10%
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A0A0A0), color-stop(10%,#FFFFFF)); /* webkit */
+);
+	/* firefox */
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DADADA', endColorstr='#FFFFFF',GradientType=0 ); /* ie */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A0A0A0), color-stop(10%,#FFFFFF
+
+));
+	/* webkit */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DADADA', endColorstr='#FFFFFF',GradientType=
+
+0 );
+/* ie
+
+*/
 	/*max-height: 50px;*/
 }
 
 section.features {
-		min-height: 100px;
-	
+	min-height: 100px;
 }
 
-.feature{
+.feature {
 	margin-top: 30px;
 	padding-left: 30px;
 }
 
-.social{
+.social {
 	text-align: right;
 }
 
 p.description {
-	/*width: 210px;  240 - icon width 
+	
+
+/*width: 210px;  240 - icon width 
 	padding-left: 30px;  icon width*/ 
 	color: #3F3F3F;
 }
@@ -101,8 +123,45 @@ p.elevatorpitch {
 	margin-top: 20px;
 }
 
-.appstore{
+.appstore {
 	text-align: center;
+}
+
+nav {
+	background: #E7E7E7 url(../images/nav-bg.png) repeat-x;
+	background-image: url(../images/nav-bg.png);
+	background-repeat-x: repeat;
+	background-repeat-y: no-repeat;
+	background-attachment: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: #E7E7E7;
+	height: 46px;
+	color: #878787;
+}
+
+a.nav-button {
+display: block;
+color: #525252;
+height: 28px;
+width: 103px;
+background: url(http://static.tumblr.com/tc764hz/QSfl22rgu/capsule.png);
+margin: 9px 10px 9px 0;
+font-size: 0.9em;
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+font-weight: bold;
+float: left;
+line-height: 28px;
+text-align: center;
+text-decoration: none;
+text-shadow: 0 1px 1px white;
+-webkit-transition: color 0.2s linear;
+-webkit-transition-property: color;
+-webkit-transition-duration: 0.2s;
+-webkit-transition-timing-function: linear;
+-webkit-transition-delay: initial;
 }
 
 /* @end */
@@ -129,20 +188,20 @@ h2 {
 	margin-right: 62px;
 }
 
-h3{
+h3 {
 	margin-bottom: 5px;
 	font-weight: bold;
 	font-size: 15px;
 	color: black;
 }
 
-
-
 /* @end */
 
 /* @group Images */
 
-.typekit-badge {display:none !important;}
+.typekit-badge {
+	display: none !important;
+}
 
 #iphone {
 	position: absolute;
@@ -152,88 +211,86 @@ h3{
 }
 
 #screencast {
-    margin-top: 92px;
-    margin-left: 22px;
+	margin-top: 92px;
+	margin-left: 22px;
 }
 
 #featurebars {
-    margin-top: 130px;
-    margin-left: 25px;
+	margin-top: 130px;
+	margin-left: 25px;
 }
 
 .featurebardescription {
-    color: #ffffff;
+	color: #ffffff;
 	font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 55px;
-    padding-top: 11px;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 55px;
+	padding-top: 11px;
 }
 
 #retinabar {
-    background-image: url(../images/retinabar.png);
+	background-image: url(../images/retinabar.png);
 	background-repeat: no-repeat;
-    height:37px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+	height: 37px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #ios4bar {
-    background-image: url(../images/ios4bar.png);
+	background-image: url(../images/ios4bar.png);
 	background-repeat: no-repeat;
-    height:37px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+	height: 37px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-img.appstore{
+img.appstore {
 	margin-top: 10px;
 }
 
 /* @group Features */
-#super-fast{
+
+#super-fast {
 	background-image: url(../images/zap.png);
 	background-repeat: no-repeat;
 }
 
-#sharing{
+#sharing {
 	background-image: url(../images/cloud.png);
 	background-repeat: no-repeat;
 }
 
-#auto-detection{
+#auto-detection {
 	background-image: url(../images/test-tube.png);
 	background-repeat: no-repeat;
 }
 
-#discovery{
+#discovery {
 	background-image: url(../images/lightbulb.png);
 	background-repeat: no-repeat;
 }
 
-#tags{
+#tags {
 	background-image: url(../images/tags.png);
 	background-repeat: no-repeat;
 }
 
-#search{
+#search {
 	background-image: url(../images/magnify.png);
 	background-repeat: no-repeat;
 }
 
-#wikipedia{
+#wikipedia {
 	background-image: url(../images/bank.png);
 	background-repeat: no-repeat;
 }
 
-#export{
+#export {
 	background-image: url(../images/collection.png);
 	background-repeat: no-repeat;
 }
 
-
 /* @end */
-
-
 
 /* @end */

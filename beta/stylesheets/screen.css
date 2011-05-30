@@ -175,6 +175,12 @@ a.nav-button:hover
   	color: #969696;
 }
 
+a.nav-button.selected {
+		background: url(../images/button-selected.png);
+	color: white;
+
+}
+
 /* @end */
 
 /* @group Headers

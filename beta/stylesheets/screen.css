@@ -142,26 +142,31 @@ nav {
 	color: #878787;
 }
 
-a.nav-button {
-display: block;
-color: #525252;
-height: 28px;
-width: 103px;
-background: url(http://static.tumblr.com/tc764hz/QSfl22rgu/capsule.png);
-margin: 9px 10px 9px 0;
-font-size: 0.9em;
-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-font-weight: bold;
-float: left;
-line-height: 28px;
-text-align: center;
-text-decoration: none;
-text-shadow: 0 1px 1px white;
--webkit-transition: color 0.2s linear;
--webkit-transition-property: color;
--webkit-transition-duration: 0.2s;
--webkit-transition-timing-function: linear;
--webkit-transition-delay: initial;
+a.nav-button{
+	display: block;
+	color: #525252;
+	height: 28px;
+	width: 103px;
+	background: url(../images/button.png);
+	margin: 9px 10px 9px 0;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	float: left;
+	line-height: 28px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 1px white;
+	-webkit-transition: color 0.2s linear;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-delay: initial;
+}
+
+a.nav-button:hover
+{
+  	color: #969696;
 }
 
 /* @end */

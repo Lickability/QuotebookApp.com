@@ -21,9 +21,9 @@
 			hoverPause:true,
 			btnPrev: ".previous",
 			btnNext: ".next",
-			visible: 3,
+			visible: 4,
 			start: 0,
-			scroll: 3,
+			scroll: 4,
 			circular: true,
 			auto:50000,
 			speed:500,				
@@ -34,10 +34,10 @@
 
 			afterEnd: function(a, to, btnGo) {
 					if(btnGo.length <= to){
-						to = 2;
+						to = 3;
 					}
 					$(".thumbActive").removeClass("thumbActive");
-					$(btnGo[to-2]).addClass("thumbActive");
+					$(btnGo[to-3]).addClass("thumbActive");
 			    }
 		});
 	});
@@ -151,12 +151,11 @@
 					</div>
 				</section>
 			</div>
-			<div class="grid_4 prefix_4">
+			<div class="grid_10 prefix_1">
 				<div id="slidebox">
 					<div class="thumbs">
-						<a href="#" onClick="" class="1 thumbActive">1</a> 
-						<a href="#" onClick="" class="4">4</a> 
-						<a href="#" onClick="" class="7">7</a> 
+						<a href="#" onClick="" class="1 thumbActive"></a> 
+						<a href="#" onClick="" class="5"></a> 
 					</div>
 					<ul>
 				    	<li>"I simply can’t believe how good this app is as a 1.0. I have needed something like this for a long, long time...I instantly added it to my iPhone home screen." - Minimal Mac</li>

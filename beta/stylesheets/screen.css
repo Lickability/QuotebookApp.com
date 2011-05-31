@@ -316,6 +316,13 @@ img.appstore {
 
 /* @group Press */
 
+p.quote {
+		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+
+	font-size: 12px;
+}
+
 #slidebox {
 	position: relative;
 	border: 1px solid #ccc;
@@ -342,8 +349,6 @@ img.appstore {
 	float: left;
 	list-style: none;
 	padding: 10px 5px;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 13px;
 }
 
 #slidebox .thumbs {

@@ -325,7 +325,7 @@ img.appstore {
 #slidebox .next:hover{background:url(../images/slidebox_next_hover.png) no-repeat left top;}
 #slidebox .previous{margin-left:10px; background:url(../images/slidebox_previous.png) no-repeat left top;}
 #slidebox .previous:hover{background:url(../images/slidebox_previous_hover.png) no-repeat left top;}
-#slidebox .thumbs{position:absolute; z-index:2; bottom:10px; right:10px;}
+#slidebox .thumbs{position:absolute; z-index:2; margin-top:90%; width: 70px;top: 0px;left: 50%;margin-left: -35px;}
 #slidebox .thumbs a{display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px; background:url(../images/slidebox_thumb.png); color:#fff;}
 #slidebox .thumbs a:hover{background:#fff; color:#000;}
 #slidebox .thumbs .thumbActive{background:#fff; color:#000; display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px;}

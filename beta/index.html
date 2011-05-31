@@ -34,10 +34,10 @@
 
 			afterEnd: function(a, to, btnGo) {
 					if(btnGo.length <= to){
-						to = 0;
+						to = 2;
 					}
 					$(".thumbActive").removeClass("thumbActive");
-					$(btnGo[to]).addClass("thumbActive");
+					$(btnGo[to-2]).addClass("thumbActive");
 			    }
 		});
 	});

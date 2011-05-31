@@ -21,15 +21,15 @@
 			hoverPause:true,
 			btnPrev: ".previous",
 			btnNext: ".next",
-			visible: 1,
+			visible: 3,
 			start: 0,
 			scroll: 1,
 			circular: true,
-			auto:1000,
+			auto:50000,
 			speed:500,				
 			btnGo:
-			    [".1", ".2",
-			    ".3", ".4"],
+			    [".1", ".4",
+			    ".7"],
 
 			afterEnd: function(a, to, btnGo) {
 					if(btnGo.length <= to){
@@ -156,12 +156,15 @@
 					<div class="previous"></div>
 					<div class="thumbs">
 						<a href="#" onClick="" class="1 thumbActive">1</a> 
-						<a href="#" onClick="" class="2">2</a> 
-						<a href="#" onClick="" class="3 ">3</a> 
 						<a href="#" onClick="" class="4">4</a> 
+						<a href="#" onClick="" class="7 ">7</a> 
 					</div>
 					<ul>
 				    	<li>content 1</li>
+				    	<li>content 2</li>
+				    	<li>content 3</li>
+				    	<li>content 4</li>
+						<li>content 5</li>
 				    	<li>content 2</li>
 				    	<li>content 3</li>
 				    	<li>content 4</li>

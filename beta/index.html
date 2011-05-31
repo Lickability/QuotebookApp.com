@@ -23,13 +23,14 @@
 			btnNext: ".next",
 			visible: 3,
 			start: 0,
-			scroll: 1,
+			scroll: 3,
 			circular: true,
 			auto:50000,
 			speed:500,				
 			btnGo:
-			    [".1", ".4",
-			    ".7"],
+			    [".1", ".2",
+			    ".3", ".4", ".5",
+			    ".6", ".7",".8", ".9"],
 
 			afterEnd: function(a, to, btnGo) {
 					if(btnGo.length <= to){
@@ -157,7 +158,7 @@
 					<div class="thumbs">
 						<a href="#" onClick="" class="1 thumbActive">1</a> 
 						<a href="#" onClick="" class="4">4</a> 
-						<a href="#" onClick="" class="7 ">7</a> 
+						<a href="#" onClick="" class="7">7</a> 
 					</div>
 					<ul>
 				    	<li>content 1</li>
@@ -165,9 +166,10 @@
 				    	<li>content 3</li>
 				    	<li>content 4</li>
 						<li>content 5</li>
-				    	<li>content 2</li>
-				    	<li>content 3</li>
-				    	<li>content 4</li>
+				    	<li>content 6</li>
+				    	<li>content 7</li>
+				    	<li>content 8</li>
+						<li>content 9</li>
 					</ul>
 				</div>
 			</div>

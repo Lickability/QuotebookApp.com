@@ -316,11 +316,11 @@ img.appstore {
 /* @end */
 
 /* @group Press */
-#slidebox{position:relative; border:1px solid #ccc; margin:40px auto;overflow:hidden;}
+#slidebox{position:relative; border:1px solid #ccc; margin:10px auto;overflow:hidden;}
 #slidebox, #slidebox ul {width:100px;height:200px;}
 #slidebox, #slidebox ul li{width:200px;height:200px;}
-#slidebox ul li{position:relative; left:0; background:#eee; float:left;list-style: none; padding:5px 5px;  font-family:Verdana, Geneva, sans-serif; font-size:13px;}
-#slidebox .next, #slidebox .previous{position:absolute; z-index:2; display:block; width:21px; height:21px;top:139px;}
+#slidebox ul li{position:relative; text-align:center; padding-left:50px;padding-right:50px; background:#eee; float:left;list-style: none; padding:50px 5px;  font-family:Verdana, Geneva, sans-serif; font-size:13px;}
+#slidebox .next, #slidebox .previous{position:absolute; z-index:2; display:block; width:21px; height:21px;top:100px;}
 #slidebox .next{right:0; margin-right:10px; background:url(../images/slidebox_next.png) no-repeat left top;}
 #slidebox .next:hover{background:url(../images/slidebox_next_hover.png) no-repeat left top;}
 #slidebox .previous{margin-left:10px; background:url(../images/slidebox_previous.png) no-repeat left top;}

@@ -401,40 +401,32 @@ sup {
 	position: absolute;
 	z-index: 2;
 	margin-top: 90%;
-	width: 40px;
+	width: 70px;
 	top: 0px;
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -35px;
 }
 
 #slidebox .thumbs a {
+
 	display: block;
 	margin-left: 5px;
-	height: 5px;
+	margin-right: 5px;
 	float: left;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 9px;
-	text-decoration: none;
-	padding: 2px 4px;
-	background: url(../images/slidebox_thumb.png);
-	color: #AAAAAA;
-}
+	width: 10px;
+	height: 10px;
+	background: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 
+}
+	
 #slidebox .thumbs a:hover {
-	background: #F5F5F5;
-	color: #000;
+	background: #909090;
 }
 
 #slidebox .thumbs .thumbActive {
 	background: #fff;
-	color: #000;
-	display: block;
-	margin-left: 5px;
-	float: left;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 9px;
-	text-decoration: none;
-	padding: 2px 4px;
 }
 
 /* @end */

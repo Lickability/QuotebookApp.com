@@ -107,6 +107,22 @@ section.contact {
 	padding-left: 30px;
 }
 
+span.newfeature {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: white;
+	background: rgba(43,140,30,0.8);
+	font-size: 10px;
+	text-align: right;
+	padding: 1px 3px;
+	margin-left: 10px;
+}
+
+#enhanced{
+		background: rgba(28,41,140,0.8);
+}
+
 .social {
 	text-align: right;
 }

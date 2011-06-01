@@ -12,8 +12,16 @@
  	<link rel="icon" type="image/png" href="favicon.png" />
 
 	<!-- JCarousel -->
-	<script src="jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 	<script src="jcarousellite_1.0.1c5.js" type="text/javascript"></script>
+	<!-- activate tabs with JavaScript --> 
+	<script> 
+	$(function() {
+
+	$("ul.css-tabs").tabs("div.css-panes > div", {effect: 'ajax', history: true});
+	});
+	</script> 
+	
 	<script type="text/javascript">
 	$(function() {
 		$("#slidebox").jCarouselLite({
@@ -103,191 +111,17 @@
 	<div class="lowergradient clearfix">
 		<nav>
 			<div class="container_12 clearfix">
-				<div class="grid_7 prefix_4 centered">
-					<a href="/beta/" class="nav-button selected">Info</a>
-					<a href="/beta/faq/" class="nav-button">FAQ</a>	
-					<a href="/beta/contact/" class="nav-button">Contact</a>
-					<a href="/beta/updates/" class="nav-button">Updates</a>		
-				</div>
+				<ul class="css-tabs grid_7 prefix_4 centered">
+					<li><a href="test.html" class="nav-button selected">Info</a></li>
+					<li><a href="test2.html" class="nav-button">FAQ</a></li>	
+					<li><a href="test3.html" class="nav-button">Contact</a></li>
+					<li><a href="test4.html" class="nav-button">Updates</a></li>		
+				</ul>
 			</div>
 		</nav>
-		<div class="container_12 clearfix">
-			<div class="grid_4"><br /></div>
-			<div class="grid_4">
-				<section class="features">
+		<div class="css-panes container_12 clearfix">
+			<div style="display:block">
 			
-					<div class="feature" id="discovery">
-							<h3>Auto-Suggest<a href="/beta/updates"><span class="newfeature">new feature</span></a></h3>
-							<p class="description">Can’t remember a famous quote?  Find the author, source, and even tags automatically. </p>
-					</div>
-					
-					<div class="feature" id="super-fast">
-						<h3>Super Fast</h3>
-						<p class="description">Capture a new quote within seconds, including the author and source.</p>
-					</div>
-					<div class="feature" id="sharing">
-						<h3>One Tap Sharing</h3>
-						<p class="description">Send a quote via Email, SMS, Facebook, Twitter, and Tumblr with one tap.</p>
-					</div>
-					
-					<div class="feature" id="search">
-							<h3>Full Text Search</h3>
-							<p class="description">Search all of your quotes, authors, sources, and tags from anywhere.</p>
-					</div>				
-				</section>
-			</div>
-			<div class="grid_4">
-				<section class="features">
-							<div class="feature" id="auto-detection">
-								<h3>Auto-Detection<a href="/beta/updates"><span class="newfeature" id="enhanced">enhanced</span></a></h3>
-								<p class="description">Alerts you to new quotes on your clipboard and lets you add them instantly.</p>
-							</div>
-							<div class="feature" id="tags">
-							
-							<h3>Tags and Ratings</h3>
-							<p class="description">Organize your quotes by categories and star ratings.</p>
-						</div>
-	
-					<div class="feature" id="wikipedia">
-						<h3>Wiki-Powered</h3>
-						<p class="description">Instantly find out more about any author or source from Wikipedia and Wikiquote.</p>
-					</div>
-			
-					<div class="feature" id="export">
-						<h3>Export</h3>
-						<p class="description">Backup, export, and email your quotes from within Quotebook.</p>
-					</div>
-				</section>
-			</div>
-			<div class="grid_12">
-				<div id="slidebox">
-					<div class="thumbs">
-						<a href="#" onClick="" class="1 thumbActive"></a> 
-						<a href="#" onClick="" class="5"></a> 
-						<a href="#" onClick="" class="9"></a> 
-					</div>
-					<ul>
-				    	<li class="press">
-							<a href="http://minimalmac.com/post/4233527241/quotebook-a-notebook-for-your-quotes-on-iphone-and"><img class="press_image" 			src="images/press/minimalmac.png"></a>
-							<p class="quote">“I simply can’t believe how good this app is as a 1.0. I have needed something like this for a long, long time...I instantly added it to my iPhone home screen.”</p> <p class="source"><span class="author">Patrick Rhone</span>, Minimal Mac</p>
-						</li>
-					
-					<li class="press">
-						<a href="http://gizmodo.com/5792630/quotebook-for-iphone"><img class="press_image" id="gizmodo" src="images/press/gizmodo.png"></a>
-						
-						<p class="quote">
-						"It's a simple, elegant way to archive those scraps of language you know might be worth revisiting down the line." 
-						</p>
-						
-						<p class="source"><span class="author">Kyle VanHemert</span>, Gizmodo</p>
-					</li>
-					
-					<li class="press">
-						<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewRoom?fcId=366289995&amp;genreIdString=36&amp;mediaTypeString=Mobile+Software+Applications"><img class="press_image" id="apple" src="images/press/apple.png"></a>
-						
-						<p class="quote">
-						<strong>Apple Staff Favorite</strong><br />
-						April 28, 2011
-						</p>
-						<p class="quote"><strong>Ranked #4 in Reference</strong></a>
-						
-						
-						<p class="source"><span class="author">Apple</span></p>
-					</li>
-					
-							<li class="press">
-								<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewRoom?fcId=366289995&amp;genreIdString=36&amp;mediaTypeString=Mobile+Software+Applications"><img class="press_image" id="appadvice" src="images/press/appadvice.png"></a>
-
-								<p class="quote">
-								“If Apple had made a quote app for the iPhone, then this would be it.”
-								</p>
-
-								<p class="source"><span class="author">Christine Chan</span>, AppAdvice</p>
-							</li>
-					
-								<li class="press">
-									<a href="http://shawnblanc.net/2011/04/quotebook/"><img class="press_image" id="shawnblanc" src="images/press/shawnblanc.png"></a>
-
-									<p class="quote">
-									“Quotebook is also new and also lovely. I have always stored quotes in Yojimbo, but this little iPhone app is just great.”
-									</p>
-
-									<p class="source"><span class="author">Shawn Blanc</span></p>
-								</li>
-								
-								<li class="press">
-									<a href="http://www.readwriteweb.com/archives/quotebook_an_ios_app_for_all_you_quotation_mavens.php"><img class="press_image" id="rrw" src="images/press/rrw.png"></a>
-
-									<p class="quote">
-									“If you're a quotation maven of the n<sup>th</sup> degree, then Quotebook could be your new favorite friend for the iPhone.”
-									</p>
-
-									<p class="source"><span class="author">Mike Melanson</span>, ReadWriteWeb</p>
-								</li>
-							
-								<li class="press">
-									<a href="http://brooksreview.net/2011/04/quick-takes-on-five-apps-7/"><img class="press_image" id="brooks" src="images/press/brooks.png"></a>
-
-									<p class="quote">
-									“If you like to store quotes, then you can’t get much better than this.”
-									</p>
-
-									<p class="source"><span class="author">Benjamin Brooks</span>, The Brooks Review</p>
-								</li>				
-								
-								<li class="press">
-									<a href="http://www.appleiphonereview.com/iphone-apps/quotebook-iphone-app-review/"><img class="press_image" id="apple-iphone-review" src="images/press/apple-iphone-review.png"></a>
-
-									<p class="quote">
-									“I think Quotebook is a fantastic, minimalistic app that serves a focused purpose that will appeal to people who love quotes.”
-									</p>
-
-									<p class="source"><span class="author">iPhoneChris</span>, Apple iPhone Review</p>
-								</li>		
-														
-								<li class="press">
-									<a href="http://al3x.net/2009/06/15/quotidian.html"><img class="press_image" id="al3x" src="images/press/al3x.png"></a>
-
-									<p class="quote">
-									“I’ve wanted to use [it] at least once a day since I had the idea for it. Everyone I’ve described it to feels the same...It’s lovely.”
-									</p>
-
-									<p class="source"><span class="author">Alex Payne</span>, al3x.net</p>
-								</li>
-							
-								<li class="press">
-									<a href="http://carpeaqua.com/2011/04/05/quotebook/"><img class="press_image" id="carpeaqua" src="images/press/carpeaqua.png"></a>
-
-									<p class="quote">
-									“It is much harder to use the stock widget set as a starting point and extend it logically and tastefully. Quotebook has successfully done that.”
-									</p>
-
-									<p class="source"><span class="author">Justin Williams</span>, carpeaqua</p>
-								</li>								
-								
-								<li class="press">
-									<a href="http://minimalmac.com/enough/#ep23"><img class="press_image" id="enough" src="images/press/enough.png"></a>
-
-									<p class="quote">
-									“This is a beautiful, beautiful app. Seriously, it brings me to tears. I couldn't recommend this app more highly.”
-									</p>
-
-									<p class="source"><span class="author">Patrick Rhone</span>, Enough</p>
-								</li>
-								
-								<li class="press">
-									<a href="http://minimalmac.com/enough/#ep23"><img class="press_image" id="enough" src="images/press/ala.png"></a>
-
-									<p class="quote">
-									<strong>App of the Week</strong><br />
-									April 6, 2011</p>
-									<p class="quote">
-									“A very worthwhile app for teens and librarians.”
-									</p>
-
-									<p class="source"><span class="author">Young Adult Library Services</span></p>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>

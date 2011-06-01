@@ -22,6 +22,20 @@
 			effect: 'fade',
 			history: true,
 			onBeforeClick: function(event, i) {
+				$(".nav-button").removeClass("selected");
+				if(i==0){
+					$("#info").addClass("selected");
+				}
+				if(i==1){
+					$("#faq").addClass("selected");
+				}
+				if(i==2){
+					$("#contact").addClass("selected");
+				}
+				if(i==3){
+					$("#updates").addClass("selected");
+				}
+				
 				// get the pane to be opened
 				var pane = this.getPanes().eq(i);
 

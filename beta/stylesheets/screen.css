@@ -382,6 +382,11 @@ margin-bottom: 10px;
 
 }
 
+div.sharebuttons {
+	height: 19px;
+	margin-bottom: 20px;
+}
+
 sup {
 	font-size: 9px;
 	line-height: 0px;

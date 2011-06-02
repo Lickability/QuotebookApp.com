@@ -3,13 +3,14 @@
 html {
 	-webkit-font-smoothing: antialiased;
 	font-family: Helvetica, "Helvetica Neue", Verdana, Arial, sans-serif;
+	color: #3f3f3f;
 }
 
 body {
 	font-size: 13px;
 	padding: 0px;
 	margin: 0px;
-	min-width: 980px;
+	min-width: 960px;
 }
 
 header {
@@ -22,12 +23,9 @@ header {
 	padding-top: 10px;
 	height: 100%;
 	background: -moz-linear-gradient(top, rgba(203,203,203,0.5) 0%, rgba(0,0,0,0.5) 100%);
-	
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(203,203,203,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
-	/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(150,150,150,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000
 	);
-
 	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CBCBCB, endColorstr=#80000000);
 }
 
@@ -35,20 +33,13 @@ footer {
 	clear: both;
 	padding-top: 30px;
 	padding-bottom: 10px;
-	font-size: 14px;
-	line-height: 18px;
 	text-align: center;
-	color: #3f3f3f;
 }
 
 footer a {
 	color: black;
 	font-weight: bold;
-
-
-/*borde
-
-r-bottom: 1px solid #3f3f3f;*/
+	/*border-bottom: 1px solid #3f3f3f;*/
 }
 
 #screen {
@@ -65,7 +56,7 @@ r-bottom: 1px solid #3f3f3f;*/
 	background: -moz-linear-gradient(top, #A0A0A0 0%, #FFFFFF 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A0A0A0), color-stop(100%,#FFFFFF));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DADADA', endColorstr='#FFFFFF',GradientType=0);
-	height: 120px;
+	height: 76px; /*46= nav height*/
 
 }
 

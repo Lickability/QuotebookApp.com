@@ -22,7 +22,7 @@
 			effect: 'fade',
 			fadeInSpeed: 600,
 			history: true,
-			onBeforeClick: function(event, i) {
+			onClick: function(event, i) {
 				$(".nav-button").removeClass("selected");
 				if(i==0){
 					$("#info").addClass("selected");

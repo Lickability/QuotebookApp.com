@@ -188,24 +188,24 @@ h3 {
 }
 
 h4 {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-weight: bold;
 	font-size: 14px;
 }
 
 section.updates h3{
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 section.updates ul li {
 	list-style-type: disc;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 }
 
 h5 {
 	margin-bottom: 10px;
-	font-weight: bold;
 	font-size: 13px;
+	font-weight: bold;
 }
 
 section.faq h3{

@@ -21,7 +21,6 @@
 
 			effect: 'fade',
 			fadeInSpeed: 600,
-			scrollable: false,
 			history: true,
 			onBeforeClick: function(event, i) {				
 				$(".nav-button").removeClass("selected");
@@ -47,6 +46,7 @@
 					// load it with a page specified in the tab's href attribute
 					pane.load(this.getTabs().eq(i).attr("href"));
 				}
+				return false;
 			}
 		}); 
 	});
@@ -122,9 +122,6 @@
 		</nav>
 		<div class="css-panes container_12 clearfix">
 			<div style="display:block"></div>
-			<div></div>
-			<div></div>
-			<div></div>
 		</div>
 	</div>
 <div class="css-panes container_12 clearfix">

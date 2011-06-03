@@ -7,51 +7,54 @@
 
 	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/reset.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/960.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/text.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/screen.css">
  	<link rel="icon" type="image/png" href="favicon.png" />
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+
+	<!-- JCarousel -->
+	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+	<!-- activate tabs with JavaScript --> 
+	<script> 
+	$(function() {
+
+		$("ul.css-tabs").tabs("div.css-panes > div", {
+
+			effect: 'fade',
+			fadeInSpeed: 600,
+			history: true,
+			onBeforeClick: function(event, i) {
+				$(".nav-button").removeClass("selected");
+				if(i==0){
+					$("#info").addClass("selected");
+				}
+				if(i==1){
+					$("#faq").addClass("selected");
+				}
+				if(i==2){
+					$("#contact").addClass("selected");
+				}
+				if(i==3){
+					$("#updates").addClass("selected");
+				}
+				
+				// get the pane to be opened
+				var pane = this.getPanes().eq(i);
+
+				// only load once. remove the if ( ... ){ } clause if you want the page to be loaded every time
+				if (pane.is(":empty")) {
+
+					// load it with a page specified in the tab's href attribute
+					pane.load(this.getTabs().eq(i).attr("href"));
+				}
+
+			}
+		});
+	});
+	</script> 
 
 	<!-- Typekit -->
 	<script type="text/javascript" src="http://use.typekit.com/bbk0adp.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<!-- Fancy box
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-	<script type="text/javascript">
-	$(document).ready(function() {
-
-		/* This is basic - uses default settings */
-
-		$("a#single_image").fancybox();
-
-		/* Using custom settings */
-
-		$("a#inline").fancybox({
-			'hideOnContentClick': true
-		});
-
-		/* Apply fancybox to multiple items */
-
-		$("a.screenshot").fancybox({
-			'transitionIn'	:	'elastic',
-			'transitionOut'	:	'elastic',
-			'speedIn'		:	600, 
-			'speedOut'		:	200, 
-			'overlayShow'	:	false,
-			/*'titlePosition' 	: 'over',
-			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';}*/
-		});
-
-	});
-	</script>
--->
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 </head>
 
 <body id="home">
@@ -70,9 +73,12 @@
 			<div class="grid_4">
 				<div id="iphone">
 					<div id="screencast">
-						<iframe src="http://player.vimeo.com/video/21634697?title=0&amp;byline=0&amp;portrait=0&amp;fullscreen=0&amp;loop=1" width="224" height="336" frameborder="0"></iframe>
+						<iframe src="http://player.vimeo.com/video/21634697?title=0&amp;byline=0&amp;portrait=0&amp;fullscreen=0&amp;loop=1" width="224" height="336"></iframe>
 					</div>
 					<div id="featurebars">
+						<a href="/beta/updates"><div id="updatebar">
+							<p class="featurebardescription">Recently Updated</p>
+						</div></a>
 						<div id="retinabar">
 							<p class = "featurebardescription">Retina Display Ready</p>
 						</div>
@@ -84,7 +90,7 @@
 				<br />
 			</div>
 			<div class="grid_1">
-				<img class="icon" src="images/icon.png" />
+				<img class="icon" alt="Quotebook icon" src="images/icon.png" />
 			</div>
 			<div class="grid_5">
 				<h1><a href="/" title="Quotebook">Quotebook</a></h1>
@@ -93,7 +99,7 @@
 		</div>
 		<div class="container_12 clearfix">
 			<div class ="grid_4 clearfix">&nbsp;</div>
-			<div class ="grid_6 clearfix"><p class="elevatorpitch">Quotebook is an iOS app for collecting and sharing the quotes that matter to you.</p></div>
+			<div class ="grid_6 clearfix"><p class="elevatorpitch">Quotebook is an iOS app for storing, sorting, and sharing all the quotes that matter to you.</p></div>
 			
 		</div>
 		<div class="container_12 clearfix">
@@ -104,57 +110,25 @@
 	</header>		
 
 	<div class="lowergradient clearfix">
-		<div class="container_12 clearfix">
-			<div class="grid_4"><br /></div>
-			<div class="grid_4">
-				<section class="features">
-					<div class="feature" id="super-fast">
-						<h3>Super Fast</h3>
-						<p class="description">Capture a new quote within seconds, including the author and source.</p>
-					</div>
-					<div class="feature" id="sharing">
-						<h3>One Tap Sharing</h3>
-						<p class="description">Send a quote via Email, SMS, Facebook, Twitter, and Tumblr with one tap.</p>
-					</div>
-					<div class="feature" id="auto-detection">
-						<h3>Auto-Detection</h3>
-						<p class="description">Alerts you to new quotes on your clipboard and lets you add them instantly.</p>
-					</div>
-					<div class="feature" id="discovery">
-						<h3>Quote Discovery</h3>
-						<p class="description">Discover more quotes from your favorite authors and sources on the web.</p>
-					</div>
-				</section>
+		<nav>
+			<div class="container_12 clearfix">
+				<ul class="css-tabs grid_7 prefix_4 centered">
+					<li><a href="info.html" class="nav-button" id="info">Info</a></li>
+					<li><a href="faq.html" class="nav-button" id="faq">FAQ</a></li>	
+					<li><a href="contact.html" class="nav-button" id="contact">Contact</a></li>
+					<li><a href="updates.html" class="nav-button" id="updates">Updates</a></li>		
+				</ul>
 			</div>
-			<div class="grid_4">
-				<section class="features">
-						<div class="feature" id="tags">
-							<h3>Tags and Ratings</h3>
-							<p class="description">Organize your quotes by categories and star ratings.</p>
-						</div>
-					<div class="feature" id="search">
-						<h3>Full Text Search</h3>
-						<p class="description">Search all of your quotes, authors, sources, and tags from anywhere.</p>
-					</div>
-					<div class="feature" id="wikipedia">
-						<h3>Wiki-Powered</h3>
-						<p class="description">Instantly find out more about any author or source from Wikipedia and Wikiquote.</p>
-					</div>
-			
-					<div class="feature" id="export">
-						<h3>Export</h3>
-						<p class="description">Backup, export, and email your quotes from within Quotebook.</p>
-					</div>
-				</section>
-			</div>
+		</nav>
+		<div class="css-panes container_12 clearfix">
+			<div style="display:block"></div>
+			<div></div>
+			<div></div>
+			<div></div>
 		</div>
 	</div>
-<div class="container_12 clearfix">
-	<footer>
-		<p><a href="http://twitter.com/share" class="twitter-share-button" data-text="Quotebook, a notebook for your quotes on iPhone and iPod touch" data-count="horizontal" data-via="quotebookapp" data-related="lickability:Makers of Quotebook">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>&nbsp;<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fquotebookapp.com&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></p>
-		<p>Quotebook is a <a href="http://lickability.net">Lickability</a> production. Say <a href="mailto:hello@quotebookapp.com">hello@quotebookapp.com</a>.</p>
-		<p></p>
-	</footer>
+<div class="css-panes container_12 clearfix">
+	<div></div>
 </div>
 
 <script>

@@ -23,7 +23,7 @@
 			fadeInSpeed: 600,
 			history: true,
 			onBeforeClick: function(event, i) {
-				event.preventDefault();
+				event.stopImmediatePropagation();
 				
 				$(".nav-button").removeClass("selected");
 				if(i==0){

@@ -23,6 +23,8 @@
 			fadeInSpeed: 600,
 			history: true,
 			onBeforeClick: function(event, i) {
+				event.preventDefault();
+				
 				$(".nav-button").removeClass("selected");
 				if(i==0){
 					$("#info").addClass("selected");
@@ -47,7 +49,7 @@
 					pane.load(this.getTabs().eq(i).attr("href"));
 				}
 			}
-		}); return false;
+		}); 
 	});
 	</script> 
 

@@ -21,8 +21,9 @@
 
 			effect: 'fade',
 			fadeInSpeed: 600,
+			scrollable: false,
 			history: true,
-			onBeforeClick: function(event, i) {
+			onBeforeClick: function(event, i) {				
 				$(".nav-button").removeClass("selected");
 				if(i==0){
 					$("#info").addClass("selected");
@@ -46,9 +47,11 @@
 					// load it with a page specified in the tab's href attribute
 					pane.load(this.getTabs().eq(i).attr("href"));
 				}
-
+			},
+			onClick:function(event, i) {
+				return false;
 			}
-		});
+		}); 
 	});
 	</script> 
 

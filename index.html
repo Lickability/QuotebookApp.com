@@ -1,143 +1,327 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Quotebook &mdash; A Notebook for Your Quotes (on iPhone and iPod touch)</title>
-	<meta name="description" content="An app for iPhone and iPod touch that lets you store, sort, and share the quotes that matter to you." />
-
-	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/reset.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/960.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="stylesheets/screen.css">
- 	<link rel="icon" type="image/png" href="favicon.png" />
-	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
-
-	<!-- JCarousel -->
-	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
-	<!-- activate tabs with JavaScript --> 
-	<script> 
-	$(function() {
-
-		$("ul.css-tabs").tabs("div.css-panes > div", {
-
-			effect: 'fade',
-			fadeInSpeed: 600,
-			history: true,
-			onBeforeClick: function(event, i) {
-				$(".nav-button").removeClass("selected");
-				if(i==0){
-					$("#info").addClass("selected");
+	<head>
+		<meta charset="utf-8">
+		<title>Quotebook &bull; A Notebook for Quotes</title>
+		<script>
+			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+				document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">');
 				}
-				if(i==1){
-					$("#faq").addClass("selected");
-				}
-				if(i==2){
-					$("#contact").addClass("selected");
-				}
-				if(i==3){
-					$("#updates").addClass("selected");
-				}
-				
-				// get the pane to be opened
-				var pane = this.getPanes().eq(i);
+		</script>
+		
+		<meta name="description" content="An app for iPhone an iPad that lets you capture and organize quotes that matter to you.">
+		<meta name="keywords" content="quotebook, notebook, ios, app, notebook for quotes, twitter, facebook, tumblr, ipad, icloud">
+		<meta name="author" content="Matt Peterse">
 
-				// only load once. remove the if ( ... ){ } clause if you want the page to be loaded every time
-				if (pane.is(":empty")) {
+		<!-- Style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 
-					// load it with a page specified in the tab's href attribute
-					pane.load(this.getTabs().eq(i).attr("href"));
-				}
-
-			}
-		});
-	});
-	</script> 
-
-	<!-- Typekit -->
-	<script type="text/javascript" src="http://use.typekit.com/bbk0adp.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</head>
-
-<body id="home">
-	<div class="container_12 clearfix">
-		<!--This fixes the facebook scroll box -->
-	</div>
-	<header>
-		<div class="insideheader clearfix">
-		<div class="container_12 clearfix">
-			<div class ="grid_9">&nbsp;</div>
-			<div class = "grid_3 social">
-				<a href="http://www.twitter.com/quotebookapp"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow Quotebook on Twitter"/></a>			
-			</div>
-		</div>
-		<div class="container_12 clearfix headercontent">
-			<div class="grid_4">
-				<div id="iphone">
-					<div id="screencast">
-						<iframe src="http://player.vimeo.com/video/21634697?title=0&amp;byline=0&amp;portrait=0&amp;fullscreen=0&amp;loop=1" width="224" height="336"></iframe>
-					</div>
-					<div id="featurebars">
-						<!-- <a href="/#updates.html"><div id="updatebar">
-							<p class="featurebardescription">Recently Updated</p>
-						</div></a> -->
-						<div id="retinabar">
-							<p class = "featurebardescription">Retina Display Ready</p>
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="img/favicon.png">
+		
+		<!-- Fonts -->
+		<script type="text/javascript" src="http://use.typekit.com/gni6iln.js"></script>
+		<script type="text/javascript" src="http://cdn.sublimevideo.net/js/o8dwkisp.js"></script>
+	</head>
+	<body>
+		
+		<div class="container content">
+			
+			<!-- Navbar -->
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+						
+						<div class="hidden-phone">
+							<ul class="nav">
+								<li><a href="." class="brand">Quotebook</a></li>
+							</ul>
+							<ul class="nav pull-right">
+								<li><a href="./faq/">FAQ</a></li>
+								<li><a href="./updates/">Updates</a></li>
+								<li><a href="mailto:hello@quotebookapp.com?subject=Quotebook Support">Contact</a></li>
+								<!--<li><a class="btn-buy" href="http://itunes.apple.com/us/app/id423726272" target="_blank"><button><div class="download-icon"></div>&nbsp;Get&nbsp;the&nbsp;App</button></a></li>-->
+							</ul>
 						</div>
-						<div id="ios4bar">
-							<p class = "featurebardescription">Requires iOS 4.0 or Higher</p>
+						
+						<div class="visible-phone">
+							<ul class="nav pull-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<div class="menu-icon"></div>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="./faq/">FAQ</a></li>
+										<li><a href="./updates/">Updates</a></li>
+										<li><a href="mailto:hello@quotebookapp.com?subject=Quotebook Support">Contact</a></li> <!--data-toggle="modal" -->
+										<li class="divider"></li>
+										<li><a href="http://itunes.apple.com/us/app/id423726272" target="_blank">&#11015; Get&nbsp;the&nbsp;App</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
+						
 					</div>
 				</div>
-				<br />
 			</div>
-			<div class="grid_1">
-				<img class="icon" alt="Quotebook icon" src="images/icon.png" />
+			<!-- End Navbar -->
+			
+			<div class="blurb visible-phone">
+				<br>
+				<div class="app-icon"></div><br><br>
+				<h1 class="brand">Quotebook</h1><br>
+				<h1>
+					Capture and organize<br>
+					quotes that matter.
+				</h1>
+				<br><br>
+				<h3>An iOS App for iPhone, iPod<br>Touch and now iPad.</h3><br><br>
+				<a href="http://itunes.apple.com/us/app/id423726272" target="_blank"><div class="appstore"></div></a>
+				<br><br>
+				<div class="video-container">
+					<img class="video-ratio" src="img/video-ratio.png" />
+					
+					<video class="video" poster="http://matthewbischoff.com/QuotebookWebsite/img/posterframe.jpg" width="100%" height="100%" 							data-uid="ce3c436" preload="none" controls="controls">
+					<source src="http://s3.amazonaws.com/Quotebookapp.com/quotebook-movie-large/Resources/quotebook-movie-large%20-%20Wi-Fi.mp4" />
+					<source src="http://s3.amazonaws.com/Quotebookapp.com/quotebook-movie-large/Resources/quotebook-movie-large%20-%20Cellular.mp4" />
+					</video>
+				</div>
 			</div>
-			<div class="grid_5">
-				<h1><a href="/" title="Quotebook">Quotebook</a></h1>
-				<h2>a notebook for your quotes</h2> 
+			
+			<div class="video-container hidden-phone">
+				
+				<div class="blurb">
+					<div class="wrap">
+						<div class="app-icon"></div><br><br>
+						<h1 class="brand">Quotebook</h1><br>
+						<h2>
+							Capture and organize<br>
+							quotes that matter.
+						</h2>
+						<br><br>
+						<h3>An iOS App for iPhone, iPod<br>Touch and now iPad.</h3><br><br>
+						<a href="http://click.linksynergy.com/fs-bin/stat?id=H4ao7P4nqTw&amp;offerid=146261&amp;type=3&amp;subid=0&amp;tmpid=1826&amp;RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fid423726272%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30" target="_blank"><div class="appstore"></div></a>
+					</div>
+				</div>
+				
+				<video class="sublime video" poster="http://matthewbischoff.com/QuotebookWebsite/img/posterframe.jpg" width="940" height="528" data-uid="ce3c436" preload="none">
+  <source src="http://s3.amazonaws.com/Quotebookapp.com/quotebook-movie-large/Resources/quotebook-movie-large%20-%20Broadband.mp4" data-quality="hd" />
+  <source src="http://s3.amazonaws.com/Quotebookapp.com/quotebook-movie-large/Resources/quotebook-movie-large%20-%20Wi-Fi.mp4" />
+  <source src="http://s3.amazonaws.com/Quotebookapp.com/quotebook-movie-large/Resources/quotebook-movie-large%20-%20Cellular.mp4" />
+</video>
+<!--
+				<video class="video" width="940" height="100%" poster="img/posterframe.jpg" preload="auto">
+					<source src="http://s3.amazonaws.com/Quotebookapp.com/quotebook-movie-large/Resources/quotebook-movie-large%20-%20Broadband.mp4" type="video/mp4" />
+					<source src="video/rough.webm" type="video/webm" />
+					<source src="video/rough.ogv" type="video/ogg" />
+				</video>
+				<img class="play" src="img/play.png" />
+-->
 			</div>
-		</div>
-		<div class="container_12 clearfix">
-			<div class ="grid_4 clearfix">&nbsp;</div>
-			<div class ="grid_6 clearfix"><p class="elevatorpitch">Quotebook is an iOS app for storing, sorting, and sharing all the quotes that matter to you.</p></div>
+			
+			<div class="praise hidden-phone">
+							<div class="wrap">
+								<div class="testimonial">
+									"I simply can't believe how good this app is as a 1.0. I have needed something like this for a long, long time...I instantly added it to my iPhone home screen."
+									<br><br>
+									<a href="http://minimalmac.com/post/4233527241/quotebook-a-notebook-for-your-quotes-on-iphone-and" target="_blank" class="minimalmac"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"It's a simple, elegant way to archive those scraps of language you know might be worth revisiting down the line."
+									<br><br><br>
+									<a href="http://gizmodo.com/5792630/quotebook-for-iphone" target="_blank" class="gizmodo"><div></div></a>
+								</div>
+								<div class="testimonial">
+									Apple Staff Favorite<br>
+									April 28, 2011<br>
+									Ranked #4 in Reference
+									<br><br><br>
+									<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewRoom?fcId=366289995&genreIdString=36&mediaTypeString=Mobile+Software+Applications" target="_blank" class="apple"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"If Apple had made a quote app for the iPhone, then this would be it."
+									<br><br><br><br><br>
+									<a href="http://quotebookapp.com/images/press/appadvice.png" target="_blank" class="appadvice"><div></div></a>
+								</div>
+
+								<div class="testimonial">
+									"Quotebook is also new and also lovely. I have always stored quotes in Yojimbo, but this little iPhone app is just great."
+									<br><br><br>
+									<a href="http://shawnblanc.net/2011/04/quotebook/" target="_blank" class="shawnblanc"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"If you're a quotation maven of the nth degree, then Quotebook could be your new favorite friend for the iPhone."
+									<br><br><br>
+									<a href="http://www.readwriteweb.com/archives/quotebook_an_ios_app_for_all_you_quotation_mavens.php" target="_blank" class="readwriteweb"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"If you like to store quotes, then you can't get much better than this."
+									<br><br><br><br>
+									<a href="http://brooksreview.net/2011/04/quick-takes-on-five-apps-7/" target="_blank" class="tbr"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"I think Quotebook is a fantastic, minimalistic app that serves a focused purpose that will appeal to people who love quotes."
+									<br><br><br>
+									<a href="http://www.appleiphonereview.com/iphone-apps/quotebook-iphone-app-review/" target="_blank" class="iphonereview"><div></div></a>
+								</div>
+
+								<div class="testimonial">
+									"I've wanted to use [it] at least once a day since I had the idea for it. Everyone I've described it to feels the same...It's lovely."
+									<br><br><br>
+									<a href="http://al3x.net/2009/06/15/quotidian.html" target="_blank" class="al3x"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"It is much harder to use the stock widget set as a starting point and extend it logically and tastefully. Quotebook has successfully done that."
+									<br><br>
+									<a href="http://carpeaqua.com/2011/04/05/quotebook/" target="_blank" class="carpeaqua"><div></div></a>
+								</div>
+								<div class="testimonial">
+									"This is a beautiful, beautiful app. Seriously, it brings me to tears. I couldn't recommend this app more highly."
+									<br><br><br>
+									<a href="http://www.70decibels.com/enough/2011/4/7/ep-23-quotebook.html" target="_blank" class="enough"><div></div></a>
+								</div>
+								<div class="testimonial">
+									App of the Week<br>
+									April 6, 2011<br>
+									"A very worthwhile app for teens and librarians."
+									<br><br><br>
+									<a href="http://carpeaqua.com/2011/04/05/quotebook/" target="_blank" class="ala"><div></div></a>
+								</div>
+							</div>
+							<div class="controls">
+								<a class="page1 current" href="1"><div></div></a>
+								<a class="page2" href="2"><div></div></a>
+								<a class="page3" href="3"><div></div></a>
+							</div>
+						</div>
+			
+						<div class="praise visible-phone">
+							<br>
+							<div class="testimonial">
+								"I simply can't believe how good this app is as a 1.0. I have needed something like this for a long, long time...I instantly added it to my iPhone home screen."
+								<br><br>
+								<a href="http://minimalmac.com/post/4233527241/quotebook-a-notebook-for-your-quotes-on-iphone-and" target="_blank" class="minimalmac"><div></div></a>
+							</div>
+							<div class="testimonial">
+								"It's a simple, elegant way to archive those scraps of language you know might be worth revisiting down the line."
+								<br><br>
+								<a href="http://gizmodo.com/5792630/quotebook-for-iphone" target="_blank" class="gizmodo"><div></div></a>
+							</div>
+							<div class="testimonial">
+								Apple Staff Favorite<br>
+								April 28, 2011<br>
+								Ranked #4 in Reference
+								<br><br>
+								<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewRoom?fcId=366289995&genreIdString=36&mediaTypeString=Mobile+Software+Applications" target="_blank" class="apple"><div></div></a>
+							</div>
+							<div class="testimonial">
+								"If Apple had made a quote app for the iPhone, then this would be it."
+								<br><br>
+								<a href="http://appadvice.com/appnn/2011/04/quickadvice-quotebook" target="_blank" class="appadvice"><div></div></a>
+							</div>
+						</div>
+			
+			<div class="footer hidden-phone">
+				<div class="left">
+					<a class="lickability" href="http://lickability.com" target="_blank"><div></div></a>
+				</div>
+				<div>
+					Home<div class="pipe"> | </div>
+					<a href="faq">FAQ</a><div class="pipe"> | </div>
+					<a href="updates">Updates</a><div class="pipe"> | </div>
+					<a href="mailto:hello@quotebookapp.com?subject=Quotebook Support">Contact</a><div class="pipe"> | </div>
+					<a href="presskit.zip">Press Kit</a>
+				</div>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://quotebookapp.com" data-text="Quotebook, a notebook for quotes" data-via="quotebookapp">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fquotebookapp.com&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+				<div class="right"><a href="http://click.linksynergy.com/fs-bin/stat?id=H4ao7P4nqTw&amp;offerid=146261&amp;type=3&amp;subid=0&amp;tmpid=1826&amp;RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fid423726272%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30" target="_blank"><div class="appstore-small"></div></a></div>
+			</div>
+			
+			<div class="footer visible-phone">
+				<a href="http://itunes.apple.com/us/app/id423726272" target="_blank"><div class="appstore-small"></div></a><br>
+				<a class="lickability" href="http://lickability.com" target="_blank"><div></div></a><br>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://quotebookapp.com" data-text="Quotebook, a notebook for quotes" data-via="quotebookapp">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fquotebookapp.com&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+			</div>
 			
 		</div>
-		<div class="container_12 clearfix">
-			<div class="grid_4">&nbsp;</div>
-			<div class="grid_6 appstore"><a href="http://click.linksynergy.com/fs-bin/stat?id=H4ao7P4nqTw&amp;offerid=146261&amp;type=3&amp;subid=0&amp;tmpid=1826&amp;RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fid423726272%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30"><img class="appstore" src="images/appstore.png" alt="Quotebook on the App Store" title="Quotebook on the App Store" /></a></div>
-		</div>
-		</div>
-	</header>		
-
-	<div class="lowergradient clearfix">
-		<nav>
-			<div class="container_12 clearfix">
-				<ul class="css-tabs grid_7 prefix_4 centered">
-					<li><a href="info.html" class="nav-button" id="info">Info</a></li>
-					<li><a href="faq.html" class="nav-button" id="faq">FAQ</a></li>	
-					<li><a href="contact.html" class="nav-button" id="contact">Contact</a></li>
-					<li><a href="updates.html" class="nav-button" id="updates">Updates</a></li>		
-				</ul>
+		
+<!--
+		<div class="modal hide in" id="contact">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">&times;</a>
+				<h3>Send Feedback</h3>
 			</div>
-		</nav>
-		<div class="css-panes container_12 clearfix">
-			<div style="display:block"></div>
-			<div></div>
-			<div></div>
-			<div></div>
+			<div class="modal-body">
+				<div class="alert alert-success">
+					<h4 class="alert-heading">Good News!</h4>
+					Your message was successfully sent.
+				</div>
+				<div class="alert alert-error">
+					<h4 class="alert-heading">Uh-Oh!</h4>
+					A problem was encountered when sending your message.
+				</div>
+				
+				<p>Name</p>
+				<input class="name-first" type="text" placeholder="First" />
+				<input class="name-last" type="text" placeholder="Last" />
+				<br><br>
+				
+				<p>Email</p>
+				<input class="email" type="email" placeholder="Email Address" />
+				<span class="help-inline">We won't share this with strangers.</span>
+				<br><br>
+				
+				<p>Message</p>
+				<textarea class="message span6" placeholder="Let us know how we can help"></textarea>
+				
+			</div>
+			<div class="modal-footer">
+				<input class="action" type="hidden" value="php/mail.php" />
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+				<a href="#" class="btn btn-primary send">Send</a>
+			</div>
 		</div>
-	</div>
-<div class="css-panes container_12 clearfix">
-	<div></div>
-</div>
+-->
+		
+		<!-- Javascript -->
+		<script src="js/libs/jquery-1.7.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/praise.js"></script>
+		<!-- End Javascript -->
 
-<script>
-	var _gaq=[['_setAccount','UA-22392938-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
+		<!-- Analytics -->
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-22392938-1']);
+				_gaq.push(['_setDomainName', 'quotebookapp.com']);
+				_gaq.push(['_trackPageview']);
 
-
-</body>
+				(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+			
+			<script type="text/javascript">
+				var _gauges = _gauges || [];
+				(function() {
+				var t   = document.createElement('script');
+				t.type  = 'text/javascript';
+				t.async = true;
+				t.id    = 'gauges-tracker';
+				t.setAttribute('data-site-id', '4fc58e03613f5d761a000001');
+				t.src = '//secure.gaug.es/track.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(t, s);
+				})();
+			</script>
+		<!--End Analytics -->
+	</body>
 </html>

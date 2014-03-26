@@ -103,19 +103,33 @@ em {
 }
 
 div#mc_embed_signup {	
+	font-family: "proxima-nova";
 	background-color: transparent;
 }
 
 #mc_embed_signup input#mce-EMAIL.email{
 	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	height: 40px;
+	font-size: 20px;
 }
 
 footer {
 	font-size: 16px;
-	color: #737373
+	color: #737373;
 }
 
 #mc_embed_signup .button {
-	background-color: rgba(221,221,221,1);
+	font-weight: 500;
+	border: 1px solid;
+	border-color: #CC4137;
+	color: #CC4137;
+	background-color: transparent;
 	
+}
+
+#mc_embed_signup .button:hover {
+	background: #CC4137;
+	color: white;
 }

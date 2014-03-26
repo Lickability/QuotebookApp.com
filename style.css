@@ -1,0 +1,14 @@
+body {
+	background-color: #efefef;
+ 	font-size: 16px;
+ 	text-align: center;
+ 	width: 300px;
+ 	margin: 2em auto;
+ 	line-height: 1.2em;
+ 	font-family: "Helvetia Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+	
+}

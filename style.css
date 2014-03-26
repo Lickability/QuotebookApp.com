@@ -60,7 +60,6 @@ body {
  	line-height: 1.2em;
  	font-family: "proxima-nova";
  	font-size: 20px;
-
  	
  	background: linear-gradient(white, #d7d7d7); /* Standard syntax */
  	
@@ -102,4 +101,10 @@ a[href] {
 
 em {
 	font-style: italic;
+}
+
+
+#mc_embed_signup {
+	
+	background-color: transparent !important;
 }

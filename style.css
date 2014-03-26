@@ -95,10 +95,11 @@ form {
 
 a[href] {
 	text-decoration: none;
+	color: #4478f4;
 }
 
 .lickability {
-	color: #CC4137;
+	color: #CC4137 !important;
 }
 
 em {
@@ -106,7 +107,7 @@ em {
 }
 
 div#mc_embed_signup {	
-	background-color: transparent !important;
+	background-color: transparent;
 }
 
 #mc_embed_signup input#mce-EMAIL.email{
@@ -117,3 +118,5 @@ footer {
 	font-size: 16px;
 	color: #737373
 }
+
+C

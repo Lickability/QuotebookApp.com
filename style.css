@@ -126,7 +126,7 @@ footer {
 	border-color: #CC4137;
 	color: #CC4137;
 	background-color: transparent;
-	width: 200px; margin:0 auto;
+	width: 200px; margin:0 auto !important;
 }
 
 #mc_embed_signup .button:hover {

@@ -112,7 +112,6 @@ input {
   height: 44px;
   outline: 0;
   border: 2px solid transparent;
-  font-family: 'Whitney A', 'Whitney B';
   font-weight: 400;
   font-size: 18px;
   color: #333;
@@ -125,10 +124,15 @@ input {
 button {
   background: #e88237;
   padding: 10px 15px;
-  font-family: 'Whitney A', 'Whitney B';
   font-weight: 600;
   font-size: 18px;
   border: 0;
   border-radius: 5px;
   color: #fff;
+}
+
+
+.mc_embed_signup {
+	
+	background-color: inherit;
 }

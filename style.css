@@ -95,11 +95,7 @@ form {
 
 a[href] {
 	text-decoration: none;
-	color: #4478f4;
-}
-
-.lickability {
-	color: #CC4137 !important;
+	color: #CC4137;
 }
 
 em {

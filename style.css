@@ -81,16 +81,16 @@ h2 {
 	margin-bottom: 1em; 
 }
 
-
 img {
   margin-bottom: 2em; 
-  }
+}
   
 p {
   margin-bottom: 1.2em; }
 
 form {
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 
 a[href] {
 	text-decoration: none;
@@ -100,44 +100,6 @@ a[href] {
 	color: #CC4137;
 }
 
-input {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #f6e8e3;
-  border: 0;
-  border-radius: 5px;
-  padding: 5px;
-  width: 300px;
-  height: 44px;
-  outline: 0;
-  border: 2px solid transparent;
-  font-weight: 400;
-  font-size: 18px;
-  color: #333;
-  text-align: center; }
-  
-  input:focus {
-    border: 2px solid #ecc171;
-    }
-
-button {
-  background: #e88237;
-  padding: 10px 15px;
-  font-weight: 600;
-  font-size: 18px;
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-}
-
-
-.mc_embed_signup {
-	
-	background-color: inherit;
-}
-
 em {
-	
 	font-style: italic;
 }

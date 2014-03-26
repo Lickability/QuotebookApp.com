@@ -109,7 +109,9 @@ div#mc_embed_signup {
 	background-color: transparent !important;
 }
 
-#mc-embedded-subscribe {text-align: center;}
+#mc_embed_signup input#mce-EMAIL.email{
+	width: 100%;
+}
 
 footer {
 	color: #737373

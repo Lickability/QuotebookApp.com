@@ -136,3 +136,8 @@ button {
 	
 	background-color: inherit;
 }
+
+em {
+	
+	font-style: italic;
+}

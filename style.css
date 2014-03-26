@@ -69,10 +69,10 @@ body {
 }
 
 h1 {
-	font-variant: 700;
+	font-variant: 500;
 	font-size: 50px;
 	font-family: "adobe-garamond-pro";
-	  margin-bottom: 1em; 
+	margin-bottom: 1em; 
 }
 
 h2 {
@@ -117,8 +117,10 @@ input {
   font-size: 18px;
   color: #333;
   text-align: center; }
+  
   input:focus {
-    border: 2px solid #ecc171; }
+    border: 2px solid #ecc171;
+    }
 
 button {
   background: #e88237;
@@ -128,4 +130,5 @@ button {
   font-size: 18px;
   border: 0;
   border-radius: 5px;
-  color: #fff; }
+  color: #fff;
+}

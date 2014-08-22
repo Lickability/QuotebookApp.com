@@ -51,8 +51,8 @@ table {
 
 
 body {
-	color: #333333;
-	background-color: #e9e9e9;
+	color: #130605;
+	background-color: #FAFAF7;
  	text-align: center;
  	
  	width: 300px;
@@ -61,8 +61,10 @@ body {
  	font-family: "proxima-nova";
  	font-size: 22px;
  	
+/*
  	background: rgb(255,255,255);
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(230,230,230,1) 70%); 	
+*/
 	
  	margin: 2em auto;
  	line-height: 1.2em
@@ -94,7 +96,7 @@ form {
 
 a[href] {
 	text-decoration: none;
-	color: #CC4137;
+	color: #900e0d;
 }
 
 em {
@@ -121,14 +123,14 @@ footer {
 
 #mc_embed_signup .button {
 	border: 1px solid;
-	border-color: #CC4137;
-	color: #CC4137;
+	border-color: #900e0d;
+	color: #900e0d;
 	background-color: transparent;
 	height: 40px;
 	width: 200px; margin:0 auto !important;
 }
 
 #mc_embed_signup .button:hover {
-	background: #CC4137;
+	background: #900e0d;
 	color: white;
 }

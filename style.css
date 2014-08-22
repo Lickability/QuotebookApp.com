@@ -55,7 +55,7 @@ body {
 	background-color: #FAFAF7;
  	text-align: center;
  	
- 	width: 300px;
+ 	width: 500px;
 
  	line-height: 1.2em;
  	font-family: "ff-meta-serif-web-pro";
@@ -72,7 +72,7 @@ body {
 
 h1 {
 	font-size: 50px;
-	font-weight: 400;
+	font-weight: 700;
 	font-family: "ff-meta-web-pro";
 	margin-bottom: 0.5em; 
 }

@@ -58,7 +58,7 @@ body {
  	width: 300px;
 
  	line-height: 1.2em;
- 	font-family: "ff-meta-web-pro";
+ 	font-family: "ff-meta-serif-web-pro";
  	font-size: 22px;
  	
 /*
@@ -73,7 +73,7 @@ body {
 h1 {
 	font-size: 50px;
 	font-weight: 400;
-	font-family: "ff-meta-serif-web-pro";
+	font-family: "ff-meta-web-pro";
 	margin-bottom: 0.5em; 
 }
 

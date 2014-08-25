@@ -1,0 +1,719 @@
+/* ==========================================================================
+   AUTHOR'S UNIVERSAL STYLES
+   ========================================================================== */
+
+.content {
+	padding-bottom: 10%;
+}
+
+
+.downloadButton img {
+	max-width: 20%;
+	min-width: 20%;
+}
+
+header h1 {
+	color: white;
+	text-decoration: none;
+	color: white;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 700;
+}
+
+header a {text-decoration: none;}
+
+header div .appIcon {
+	width: 75px;
+	padding-right: 10px;
+	margin-top: -3px;
+}
+
+header h2 {
+	color: #f8d5d2;
+	font-size: 1.3rem;
+	margin-top: -25px;
+	margin-bottom: 5%;
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-weight: 500;
+}   
+
+.allContent .internal {
+	margin-bottom: 10%;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	width: 100%;
+	display: block;
+
+	background: rgba(144,11,0,1);
+	background: -moz-linear-gradient(-45deg, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(144,11,0,1)), color-stop(100%, rgba(122,9,1,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: linear-gradient(135deg, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900b00', endColorstr='#7a0901', GradientType=1 );
+}
+
+footer p {
+	color: rgba(255,255,255,0.5);
+	font-size: .7rem;
+	line-height: 1.1rem;
+}
+
+footer p a {
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+}
+
+footer p a:hover {
+	color: rgba(255,255,255,1);
+	text-decoration: underline;
+	transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+
+
+/* ==========================================================================
+   HOMEPAGE STYLES
+   ========================================================================== */
+   
+.hero {
+	background: rgba(144,11,0,1);
+	background: -moz-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(144,11,0,1)), color-stop(100%, rgba(122,9,1,1)));
+	background: -webkit-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -o-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -ms-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: linear-gradient(to bottom, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900b00', endColorstr='#7a0901', GradientType=0 );
+	min-height: 300px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+
+.hero .container .grid .unit {
+	display: block;
+	z-index: 9999;
+}
+
+.hero .introContent {
+	margin-top: 5%;
+}
+
+.hero a {text-decoration: none;}
+
+.hero .downloadButton img {
+	width: 25%;
+	min-width: 20%;
+}
+   
+   
+.pageWrapper {
+	margin-top: 0%;
+	height: 100%;
+}
+
+
+.productShots {
+	margin-top: -19%;
+	max-width: 80%;
+	margin-right: 10%;
+	float: right;
+}
+
+
+.iPhone {
+	max-width: 15%;
+	min-width: 10%;
+	float: right;
+	margin-top: -30%;
+	margin-right: 30%;
+}
+
+.iPad {
+	max-width: 60%;
+	min-width: 40%;
+	float: right;
+}
+
+
+.pageContent {margin-top: 0%;}
+
+.icon {
+	z-index: 999;
+	margin-top: 0%;
+}
+
+.section2 {padding-top: 5%; padding-bottom: 0;}
+.section3 {padding-bottom: 5%;}
+
+.section3 ul li {
+	padding-bottom: -10px;
+}
+
+.section3 ul li { list-style-position: outside; }
+
+
+.featureIn {
+	background-color: #f2f2f2;
+	text-align: center;
+	margin-top: 3%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.featureIn .logos {
+	margin-bottom: 1%;
+	padding-top: 3%;
+	margin-left: -50px;
+	opacity: 0.3;
+}
+
+.featureIn h3 {
+	color: rgba(0,0,0,0.3);
+}
+
+.logos .unit .one-of-four img {
+	margin: 0;
+}
+
+
+.logos ul li {
+	display: inline;
+	padding: 20px;
+}
+
+.logos ul li img {
+	width: 250px;
+}
+
+.featureIn .logo {
+	
+}
+
+.featureIn .logo  {
+	padding-bottom: 50px;
+}
+
+.logos ul li img.techCrunch {
+	padding-bottom: 20px;
+}
+
+.logos ul li img.apple {
+	width: 60px;
+	padding-bottom: 20px;
+}   
+   
+   
+/* ==========================================================================
+   FAQ PAGE STYLES
+   ========================================================================== */
+
+
+.nav {
+	background: rgba(144,11,0,1);
+	background: -moz-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(144,11,0,1)), color-stop(100%, rgba(122,9,1,1)));
+	background: -webkit-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -o-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: -ms-linear-gradient(top, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	background: linear-gradient(to bottom, rgba(144,11,0,1) 0%, rgba(122,9,1,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#900b00', endColorstr='#7a0901', GradientType=0 );
+	height: auto;
+}
+
+.nav .appIcon {
+	width: 70px;
+	padding-right: 20px;
+}
+
+.nav .downloadButton img {
+	float: right;
+	max-width: 30%;
+	padding-top: 7%;
+}
+
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    position: relative; 
+    min-height: 100%
+}
+
+body{
+  font-size: .92rem;
+  letter-spacing: .02rem;
+  line-height: 1.34rem;
+  padding:0;
+  margin:0;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.productShots {display: none;}
+	.hero {
+		min-height: 300px;
+		padding-top: 50px;
+		padding-bottom: 30px;	
+	}
+	
+	.hero .downloadButton img {width: 50%;}
+	
+	.downloadButton img {max-width: 50%;}
+	
+	.header h2 {
+		margin-top: -15px;
+		margin-bottom: 10%;
+		line-height: !important 1em;
+	}
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	.nav .downloadButton img {
+		float: right;
+		max-width: 30%;
+		padding-top: 0%;
+		padding-bottom: 10%;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	.productShots {display: none;}
+	.nav .downloadButton img {
+		float: left;
+		max-width: 65%;
+		padding-top: 0%;
+		padding-bottom: 10%;
+	}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.nav .downloadButton img {
+		float: right;
+		max-width: 35%;
+		padding-top: 8%;
+		padding-bottom: 4%;
+	}
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.hero {
+		min-height: 0px;
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+	.productShots {
+		margin-top: -25%;
+		max-width: 100%;
+		margin-right: 2%;
+		float: right;
+	}
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.productShots {display: none;}
+	.hero {
+			min-height: 0px;
+			padding-top: 10px;
+			padding-bottom: 0px;
+		}
+		.nav .downloadButton img {
+		float: right;
+		max-width: 40%;
+		padding-top: 10%;
+		padding-bottom: 4%;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	.nav .downloadButton img {
+		float: right;
+		max-width: 35%;
+		padding-top: 6%;
+		padding-bottom: 4%;
+	}
+	.productShots {
+		margin-top: -25%;
+		max-width: 100%;
+		margin-right: 5%;
+		float: right;
+	}
+}
+
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	.hero {
+		padding-top: 150px;
+	}
+	
+	.productShots {
+		margin-top: -20%;
+		max-width: 90%;
+		margin-right: 5%;
+		float: right;
+	}
+}
+
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {/* Styles */}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

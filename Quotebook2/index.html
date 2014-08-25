@@ -166,14 +166,19 @@
 
         <!-- Sticky Footer--> 
         <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script><script type="text/javascript">
-			$(document).ready(function() {
-				var bodyHeight = $("body").height();
-				var vwptHeight = $(window).height();
-					if (vwptHeight > bodyHeight) {
-						$("footer#colophon").css("position","fixed").css("bottom",0);
-					}
+		jQuery(document).ready(function($) {
+			$(window).load(function(){
+			    var windowH = $(window).innerHeight();
+			    var bodyH = $('body').innerHeight();
+			    if(windowH > bodyH) {                            
+			        $('body').css({'min-height':windowH+'px'});
+			    }
+			    if(windowH >= bodyH) {
+			        $('.footer').css({position:'absolute',bottom:0});
+			    }
 			});
-		</script> 
+		});
+	</script> 
  
         
     </body>

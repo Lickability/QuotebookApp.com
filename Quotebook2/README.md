@@ -1,2 +1,4 @@
-The landing page for Quotebook.
+The Quotebook landing page. 
 ===
+
+[Quotebook.com](http://www.quotebookapp.com)

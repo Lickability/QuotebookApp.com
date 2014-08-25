@@ -1,0 +1,27 @@
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";}
+.clearfix:after{clear:both;}
+.hide-text{overflow:hidden;text-indent:100%;white-space:nowrap;}
+.input-block-level{display:block;width:100%;min-height:28px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+.hidden{display:none;visibility:hidden;}
+.visible-phone{display:none;}
+.visible-tablet{display:none;}
+.visible-desktop{display:block;}
+.hidden-phone{display:block;}
+.hidden-tablet{display:block;}
+.hidden-desktop{display:none;}
+
+/* <= 768 */
+@media (max-width:767px){.visible-phone{display:block;} .hidden-phone{display:none;} .hidden-desktop{display:block;} .visible-desktop{display:none;}}
+
+/* <= 480 */
+@media (max-width:480px){.nav-collapse{-webkit-transform:translate3d(0, 0, 0);} .page-header h1 small{display:block;line-height:18px;} input[type="checkbox"],input[type="radio"]{border:1px solid #ccc;} .form-horizontal .control-group>label{float:none;width:auto;padding-top:0;text-align:left;} .form-horizontal .controls{margin-left:0;} .form-horizontal .control-list{padding-top:0;} .form-horizontal .form-actions{padding-left:10px;padding-right:10px;} .modal{position:absolute;top:10px;left:10px;right:10px;width:auto;margin:0;}.modal.fade.in{top:auto;} .modal-header .close{padding:10px;margin:-10px;} .carousel-caption{position:static;}}
+
+/* <= 767 */
+@media (max-width:767px){body{padding-left:20px;padding-right:20px;} .navbar-fixed-top{margin-left:-20px;margin-right:-20px;} .container{width:auto;} .row-fluid{width:100%;} .row{margin-left:0;} .row>[class*="span"],.row-fluid>[class*="span"]{float:none;display:block;width:auto;margin:0;} .thumbnails [class*="span"]{width:auto;} input[class*="span"],select[class*="span"],textarea[class*="span"],.uneditable-input{display:block;width:100%;min-height:28px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;} .input-prepend input[class*="span"],.input-append input[class*="span"]{width:auto;}}
+
+
+
+/* >= 980 */
+@media (min-width:980px){.nav-collapse.collapse{height:auto !important;overflow:visible !important;}}
+
+/* delete >= 1200 */

@@ -244,7 +244,6 @@ footer p a:hover {
 	padding-top: 0%;
 	padding-bottom: 40px;
 	margin-left: -50px;
-	opacity: 0.3;
 }
 
 .featureIn h3 {
@@ -274,7 +273,7 @@ footer p a:hover {
 }   
    
 .linkimage {
-	opacity: 0.7;
+	opacity: 0.3;
 	
     -webkit-transition: all 0.15s linear;
        -moz-transition: all 0.15s linear;
@@ -284,8 +283,23 @@ footer p a:hover {
 }
 
 .linkimage:hover {
+	opacity: 0.6;
+}
+
+.lickabilityimage {
+	opacity: 0.7;
+	
+    -webkit-transition: all 0.15s linear;
+       -moz-transition: all 0.15s linear;
+        -ms-transition: all 0.15s linear;
+         -o-transition: all 0.15s linear;
+            transition: all 0.15s linear;
+}
+
+.lickabilityimage:hover {
 	opacity: 1.0;
 }
+
    
 /* ==========================================================================
    FAQ PAGE STYLES

@@ -31,10 +31,10 @@ header div .appIcon {
 
 header h2 {
 	color: #f8d5d2;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	margin-top: -25px;
 	margin-bottom: 5%;
-	font-family: "ff-meta-serif-web-pro",serif;
+	/* font-family: "ff-meta-serif-web-pro",serif; */
 	font-weight: 500;
 }   
 

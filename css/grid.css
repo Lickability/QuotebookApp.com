@@ -113,6 +113,11 @@ p {
 	color: #484545;
 }
 
+colophon, p {
+	font-family: "ff-meta-web-pro",sans-serif;
+	font-weight: 500;
+}
+
 p span {font-weight: 900; color: #000000;}
 
 h1, .alpha {

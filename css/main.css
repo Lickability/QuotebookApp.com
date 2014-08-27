@@ -134,15 +134,17 @@ footer p {
 footer p a {
 	color: rgba(255,255,255,0.7);
 	text-decoration: none;
+	
+    -webkit-transition: all 0.15s linear;
+       -moz-transition: all 0.15s linear;
+        -ms-transition: all 0.15s linear;
+         -o-transition: all 0.15s linear;
+            transition: all 0.15s linear;
 }
 
 footer p a:hover {
 	color: rgba(255,255,255,1);
-	text-decoration: none;
-	transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	-webkit-transition: all .3s linear;
+	text-decoration: none;	
 }
 
 
@@ -273,6 +275,12 @@ footer p a:hover {
    
 .linkimage {
 	opacity: 0.7;
+	
+    -webkit-transition: all 0.15s linear;
+       -moz-transition: all 0.15s linear;
+        -ms-transition: all 0.15s linear;
+         -o-transition: all 0.15s linear;
+            transition: all 0.15s linear;
 }
 
 .linkimage:hover {

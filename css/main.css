@@ -138,7 +138,7 @@ footer p a {
 
 footer p a:hover {
 	color: rgba(255,255,255,1);
-	text-decoration: underline;
+	text-decoration: none;
 	transition: all .3s linear;
 	-moz-transition: all .3s linear;
 	-o-transition: all .3s linear;
@@ -655,7 +655,7 @@ only screen and (min-device-pixel-ratio : 1.5) {/* Styles */}
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {

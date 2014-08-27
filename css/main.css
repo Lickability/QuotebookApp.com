@@ -537,7 +537,7 @@ and (max-device-width : 480px) {
 	
 	.hero .downloadButton img {width: 50%;}
 	
-	.downloadButton img {max-width: 50%;}
+	.downloadButton img {max-width: 70%;}
 	
 	.header h2 {
 		margin-top: -15px;

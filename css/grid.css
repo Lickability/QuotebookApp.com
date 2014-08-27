@@ -114,13 +114,8 @@ p {
 }
 
 colophon, p {
-	font-size: .92rem;
-	letter-spacing: .02rem;
-	line-height: 1.34rem;
 	font-family: "ff-meta-web-pro",sans-serif;
-	font-style: normal;
 	font-weight: 500;
-	color: #484545;
 }
 
 p span {font-weight: 900; color: #000000;}

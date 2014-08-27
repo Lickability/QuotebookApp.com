@@ -16,7 +16,7 @@ header h1 {
 	color: white;
 	text-decoration: none;
 	color: white;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-style: normal;
 	font-weight: 700;
 }
@@ -31,7 +31,7 @@ header div .appIcon {
 
 header h2 {
 	color: #f8d5d2;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	margin-top: -25px;
 	margin-bottom: 5%;
 	/* font-family: "ff-meta-serif-web-pro",serif; */
@@ -535,9 +535,9 @@ and (max-device-width : 480px) {
 		padding-bottom: 30px;	
 	}
 	
-	.hero .downloadButton img {width: 50%;}
+	.hero .downloadButton img {width: 75%;}
 	
-	.downloadButton img {max-width: 70%;}
+	.downloadButton img {max-width: 50%;}
 	
 	.header h2 {
 		margin-top: -15px;

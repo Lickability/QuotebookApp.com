@@ -535,9 +535,9 @@ and (max-device-width : 480px) {
 		padding-bottom: 30px;	
 	}
 	
-	.hero .downloadButton img {width: 50%;}
+	.hero .downloadButton img {width: 90%;}
 	
-	.downloadButton img {max-width: 50%;}
+	.downloadButton img {max-width: 90%;}
 	
 	.header h2 {
 		margin-top: -15px;

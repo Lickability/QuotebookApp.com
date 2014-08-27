@@ -210,7 +210,9 @@ footer p a:hover {
 }
 
 
-.pageContent {margin-top: 0%;}
+.pageContent {
+	margin-top: 0%;
+}
 
 .icon {
 	z-index: 999;
@@ -232,11 +234,13 @@ footer p a:hover {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	margin-top: 6%;
 }
 
 .featureIn .logos {
 	margin-bottom: 0%;
-	padding-top: 3%;
+	padding-top: 0%;
+	padding-bottom: 40px;
 	margin-left: -50px;
 	opacity: 0.3;
 }
